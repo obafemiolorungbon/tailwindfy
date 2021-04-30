@@ -1,0 +1,13 @@
+Create a CLI tool to help purge unused tailwind css without actually setting it up in your project, this is meant to help people that want to use tailwind for html projects
+without setting up tailwind. Its just a quick, pick and drop tool for purging css
+
+How would it work : (Top of the head idea)
+
+so, probably have a folder with the index.js for the package, with tailwind set up already. Therefore, all you have to pass to tailwind is the files or link to directory
+that contain the html/jsx or whichever, for the tailwind project. Then the tool spit out the build css needed for the project. No configurations needed. 
+
+So basically
+1. Have a folder for the package, that has tailwind installed as a dependency, as well as the neccesary tools to purge;
+2. The tool will receive the path to the folder containing the files to be purged
+3. the tool will then create a file css, in the directory that you can then use in your final html which will be as light as possible.
+
