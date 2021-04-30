@@ -25,7 +25,7 @@ module.exports={purgeFile
 
 //clear();
 // console.log(
-//   chalk.green(figlet.textSync("concorde", { horizontalLayout: "full" }))
+//   chalk.green(figlet.textSync("", { horizontalLayout: "full" }))
 // );
 //to do
 
