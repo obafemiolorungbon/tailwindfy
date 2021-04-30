@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "postcss styles/input/tailwindbase.css -o styles/output/tailwinddevcss.css",
-    "compile": "gulp createDemo"
+    "build": "postcss styles/input/tailwindbase.css -c ./styles/output/tailwind.config.cjs -o styles/output/tailwinddevcss.css",
+    "setup":"node index.js",
+    "compile": "gulp compile"
   },
   "keywords": [
     "purge",
