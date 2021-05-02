@@ -1,6 +1,6 @@
 {
   "name": "tailwindfy",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "a minimal cli tool to help purge tailwind css without the tailwind set up",
   "main": "index",
   "bin": {
