@@ -1,6 +1,6 @@
 {
   "name": "tailwindfy",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "a minimal cli tool to help purge tailwind css without the tailwin set up",
   "main": "index",
   "bin": {
@@ -27,7 +27,7 @@
     "Obafemi Joseph <obafedance@gmail.com>"
   ],
   "repository": "https://github.com/obafemiolorungbon/tailwindfy",
-  "issues":"https://github.com/obafemiolorungbon/tailwindfy/issues",
+  "issues": "https://github.com/obafemiolorungbon/tailwindfy/issues",
   "license": "MIT",
   "dependencies": {
     "autoprefixer": "^10.2.5",
