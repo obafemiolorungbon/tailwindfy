@@ -2,6 +2,8 @@
 
 This tool will help you to quickly purge your HTML, jsx and other template files without having to install and set up tailwind yourself.
 
+## GETTING STARTED
+
 Tailwindfy is pretty straight forward to set up and use.
 First, you install using:
 
@@ -13,13 +15,21 @@ or
 yarn add tailwindfy
 ```
 
+Yarn is the preffered and much developer friendly option so if you haven't been using yarn, then you have to install yarn by running
+
+```shell
+ npm install -g yarn
+```
+
+to install yarn globally
+
 ## USAGE
 
 Since tailwindfy is a command line npm package, you simply need to use the node's npx command to get it up and running.
 
 Tailwindfy offers the core tailwind functionalities in two broad ways:
 
-## 1. Create Developemnt CSS
+## 1. Create Developement CSS
 
 Tailwindfy offers the large development CSS that comes with several configurations and variants, carefully put together by [Kitwinds's](https://kitwind.io/) Kometa UI.
 To get this CSS (~8MB), you run the follwing command in the shell
@@ -31,7 +41,7 @@ To get this CSS (~8MB), you run the follwing command in the shell
 This will output the CSS file ```tailwinddevcss.css``` inside a styles/output folder in your working directory. Which can then be linked with the desired ```javascript HTML``` or imported into ```javascript .jsx```.
 The development CSS is quite large and rightly so because of the several breakpoints and colors multiplied to offer smooth developement experience. However, you would obviously not want to ship that large CSS for production and tailwindfy offers just that.
 
-## 2. PURGE/SHED UNUSED CSS
+## 2. PURGE UNUSED CSS
 
 After tweaking the project to taste, you will likely want to ship the project into production. It is quite unacceptable to send ~8MB of CSS to the user over the bandwidth. Therefore to reduce the CSS file size to exactly the ones utilized, you simply use the ```javascript npx``` command to purge unused CSS. On the Shell or command line, run:
 

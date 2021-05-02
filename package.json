@@ -1,7 +1,7 @@
 {
   "name": "tailwindfy",
   "version": "0.0.4",
-  "description": "a minimal cli tool to help purge tailwind css without the tailwin set up",
+  "description": "a minimal cli tool to help purge tailwind css without the tailwind set up",
   "main": "index",
   "bin": {
     "concorde": "bin/cli.js"
