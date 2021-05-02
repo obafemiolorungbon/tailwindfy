@@ -23,7 +23,7 @@ const {filename} = getValues()
 console.log(path.join(__dirname + filename));
 const createConfig =()=>{
         return src("./tailwind.config.cjs")
-          .pipe(inject.after("module.exports={",`purge:["${filename}"],`))
+          .pipe(inject.after("module.exports = {",`purge:["${filename}"],`))
           .pipe(rename("./miniTailwind.config.cjs"))
           .pipe(dest(`./`));
 }
