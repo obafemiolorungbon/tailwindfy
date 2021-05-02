@@ -1,6 +1,2 @@
 node_modules/
 .vscode/
-*.txt
-test.js
-miniTailwind.config.cjs
-condore.config.json
