@@ -1,6 +1,5 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
-const path = require("path");
-module.exports = {
+module.exports = {         
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {

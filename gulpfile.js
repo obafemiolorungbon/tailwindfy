@@ -18,14 +18,13 @@ const getValues = ()=>{
   
   }
 }
-const filename = getValues()
+const {filename} = getValues()
 console.log(path.join(__dirname + filename));
 const createConfig =()=>{
         let enabled = true
-        let pathToFile = path.join(process.cwd(),filename)
         let toWrite = `purge:{
                               enabled : ${enabled}, 
-                              content : ["${pathToFile}"]},
+                              content : ["../${filename}"]},
                       `; 
         return src("./tailwind.config.js")
           .pipe(inject.after("module.exports = {",toWrite))
