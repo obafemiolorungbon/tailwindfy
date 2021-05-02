@@ -1,5 +1,5 @@
 {
-  "name": "tailwindpurge",
+  "name": "tailwindfy",
   "version": "0.0.1",
   "description": "a minimal cli tool to help purge tailwind css without the tailwin set up",
   "main": "index",
