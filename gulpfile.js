@@ -8,9 +8,9 @@ const getValues = ()=>{
   try{
     let config = fs.readFileSync("condore.config.json");
     console.log("config file detected, now reading ......")
-    let {filename} = JSON.parse(config);
+    let filename = JSON.parse(config);
     console.log("Config file read succesfully, now updating tailwind config")
-    return {filename}
+    return filename
     }catch(err){
       console.log(`An error occured while trying to open the config file,make sure you have created the config file by running [command] 
       `)
@@ -18,7 +18,7 @@ const getValues = ()=>{
   
   }
 }
-const {filename} = getValues()
+const filename = getValues()
 console.log(path.join(__dirname + filename));
 const createConfig =()=>{
         let enabled = true
