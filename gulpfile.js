@@ -9,6 +9,7 @@ const getValues = ()=>{
     let config = fs.readFileSync("condore.config.json");
     console.log("config file detected, now reading ......")
     let filename = JSON.parse(config);
+    console.log(filename);
     console.log("Config file read succesfully, now updating tailwind config")
     return filename
     }catch(err){
@@ -18,14 +19,15 @@ const getValues = ()=>{
   
   }
 }
-const {filename} = getValues()
+const file = getValues()
+const filename = file.file;
 console.log(path.join(__dirname + filename));
 const createConfig =()=>{
         let enabled = true
-        let toWrite = `purge:{
-                              enabled : ${enabled}, 
-                              content : ["../${filename}"]},
-                      `; 
+        let toWrite = `
+    purge:{
+      enabled : ${enabled}, 
+      content : ["../${filename}"]},`; 
         return src("./tailwind.config.js")
           .pipe(inject.after("module.exports = {",toWrite))
           .pipe(dest(`./`));
