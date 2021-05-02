@@ -1,6 +1,5 @@
 const {src,dest} = require("gulp");
 const inject = require("gulp-inject-string");
-const initialBuild = require("./initialBuild");
 const fs = require("fs");
 const path = require("path");
 const rename = require("gulp-rename");
