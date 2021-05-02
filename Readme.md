@@ -2,7 +2,7 @@
 
 This tool will helpt you to quickly purge your HTML, jsx and other template files without having to install and set up tailwind yourself.
 
-Concorde is pretty straight forward to set up and use as that is the point in the first place!.
+tailwindpurge is pretty straight forward to set up and use as that is the point in the first place!.
 
 To get concorde up and running, you only need two steps,
 
@@ -15,7 +15,7 @@ To get concorde up and running, you only need two steps,
 ## USAGE
 
 ``` javascript
+npx tailwindpurge
 
-const concorde = require concorde
 
 ```
