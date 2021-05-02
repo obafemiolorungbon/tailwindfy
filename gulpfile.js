@@ -1,5 +1,6 @@
 const {src,dest} = require("gulp");
 const inject = require("gulp-inject-string");
+const initialBuild = require("./initialBuild");
 const fs = require("fs");
 const path = require("path");
 
@@ -22,8 +23,18 @@ const {filename,destination} = getValues()
 console.log(path.join(__dirname + filename),path.join(__dirname + destination));
 const createConfig =()=>{
         return src("./tailwind.config.cjs")
-          .pipe(inject.after("content:[",`"${path.join(__dirname + filename)}"`))
-          .pipe(dest(`${path.join(__dirname + destination)}`));
+          .pipe(inject.after("content:[",`"${filename}"`))
+          .pipe(dest(`./`));
+}
+
+const firstBuilld =async ()=>{
+  const initBuildPath = await initialBuild();
+  
+}
+
+const firstBuild = ()=>{
+  return src("./package.json")
+    .pipe(inject.after(""))
 }
 
 // const editConfig = ()=>{

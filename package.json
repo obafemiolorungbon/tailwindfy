@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "description": "a minimal cli tool to help purge tailwind css without the tailwin set up",
   "main": "index.js",
+  "bin":{
+    "concorde":"bin/cli.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "postcss styles/input/tailwindbase.css -c ./styles/output/tailwind.config.cjs -o styles/output/tailwinddevcss.css",
-    "setup":"node index.js",
+    "build large": "postcss styles/config/tailwindbase.css -c ./tailwind.config.cjs -o ../styles/output/tailwinddevcss.css",
+    "build small":"postcss styles/config/tailwindbase.css -c ./tailwind.config.cjs -o ../styles/output/tailwindminicss.css",
+    "setup": "node index.js",
     "compile": "gulp compile",
-    "commit":"git push -u origin master"
+    "commit": "git push -u origin master",
+    "lauch":"yarn run setup && yarn run compile && yarn run build"
   },
   "keywords": [
     "purge",
@@ -30,6 +35,7 @@
     "inquirer": "^8.0.0",
     "postcss": "^8.2.13",
     "postcss-cli": "^8.3.1",
+    "shelljs": "^0.8.4",
     "tailwindcss": "^2.1.2"
   },
   "devDependencies": {
