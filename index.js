@@ -5,13 +5,10 @@ const setUpConfig = require("./lib/setUpConfig")
 const argv = process.argv[2]
 console.log(argv)
 if (argv =="large"|| argv == "l"){
-  console.log(`Now running from ${process.cwd()}`)
   shell.exec("cd ./node_modules/tailwindpurge && yarn run devBuild ");
   return
 }
-const filename = process.argv[4];
+const filename = process.argv[3];
 setUpConfig(filename);
-shell.exec("yarn run compile")
-
-purgeFile();
+shell.exec(" cd ./node_modules/tailwindpurge && yarn run compile && yarn run miniBuild")
 module.exports = { purgeFile };
