@@ -1,17 +1,16 @@
-#! /usr/bin/env node
+const shell = require('shelljs');
 const { askQuestions, InitialBuild } = require("./lib/askDetails");
-const fs = require("fs");
+const setUpConfig = require("./lib/setUpConfig")
 
-const purgeFile = async () => {
-  try {
-    let replies = await askQuestions();
-    let preference = await InitialBuild();
-    let config = { ...replies, ...preference };
-    fs.writeFileSync("condore.config.json", JSON.stringify(config));
-    console.log(config);
-  } catch (err) {
-    console.log(err);
-  }
-};
+
+if (argv =="large"|| argv == "l"){
+  const argv = process.argv[3];
+  shell.exec("yarn run devBuild");
+  return
+}
+const filename = process.argv[4];
+setUpConfig(filename);
+shell.exec("yarn run compile")
+
 purgeFile();
 module.exports = { purgeFile };
