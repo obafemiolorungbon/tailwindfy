@@ -22,9 +22,17 @@ const {filename} = getValues()
 
 console.log(path.join(__dirname + filename));
 const createConfig =()=>{
-        return src("./tailwind.config.cjs")
-          .pipe(inject.after("module.exports = {",`purge:["${filename}"],`))
-          .pipe(rename("./miniTailwind.config.cjs"))
+        let enabled = true
+        let toWrite = `purge:{
+                              enabled : ${enabled}, 
+                              content : "${path.join(
+                                process.cwd(),
+                                filename
+                              )}"},
+                      `; 
+        return src("./tailwind.config.js")
+          .pipe(inject.after("module.exports = {",toWrite))
+          .pipe(rename("./tailwind.config.js"))
           .pipe(dest(`./`));
 }
 

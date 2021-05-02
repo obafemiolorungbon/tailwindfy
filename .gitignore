@@ -3,3 +3,4 @@ node_modules/
 *.txt
 test.js
 miniTailwind.config.cjs
+condore.config.json
