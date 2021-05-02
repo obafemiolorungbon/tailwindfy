@@ -7,8 +7,8 @@
     "concorde": "bin/cli.js"
   },
   "scripts": {
-    "checkin": "cd ./node_modules/tailwindpurge",
-    "build": "postcss styles/config/tailwindbase.css -c ./tailwind.config.cjs -o ../styles/output/tailwinddevcss.css",
+    "checkin": "dir",
+    "build": "postcss ./styles/config/tailwindbase.css -c ./tailwind.config.cjs -o ../styles/output/tailwinddevcss.css",
     "test": "echo \"Error: no test specified\" && exit 1",
     "devBuild": "yarn run checkin && yarn run build",
     "miniBuild": "postcss styles/config/tailwindbase.css -c ./tailwind.config.cjs -o ../styles/output/tailwindminicss.css",
