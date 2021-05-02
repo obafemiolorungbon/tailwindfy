@@ -3,9 +3,9 @@ const { askQuestions, InitialBuild } = require("./lib/askDetails");
 const setUpConfig = require("./lib/setUpConfig")
 
 const argv = process.argv[2]
-
+console.log(argv)
 if (argv =="large"|| argv == "l"){
-  const argv = process.argv[3];
+  console.log(`Now running from ${process.cwd()}`)
   shell.exec("yarn run devBuild");
   return
 }

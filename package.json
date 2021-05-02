@@ -11,7 +11,7 @@
     "devBuild": "postcss styles/config/tailwindbase.css -c ./tailwind.config.cjs -o ../styles/output/tailwinddevcss.css",
     "miniBuild": "postcss styles/config/tailwindbase.css -c ./tailwind.config.cjs -o ../styles/output/tailwindminicss.css",
     "compile": "gulp compile",
-    "commit": "git push -u origin master",
+    "commit": "git add . && git commit -m 'fix: fix errors' && git push -u origin master",
     "lauch": "yarn run setup && yarn run compile && yarn run build"
   },
   "keywords": [
