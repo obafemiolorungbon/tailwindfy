@@ -6,8 +6,8 @@ const argv = process.argv[2]
 console.log(argv)
 if (argv =="large"|| argv == "l"){
   console.log(`Now running from ${process.cwd()}`)
-  shell.exec("cd ./node_modules/tailwindpurgeyarn");
-  shell.exec("run devBuild");
+  shell.exec("cd ./node_modules/tailwindpurge");
+  shell.exec("yarn run devBuild");
   return
 }
 const filename = process.argv[4];
