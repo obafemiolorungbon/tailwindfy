@@ -1,10 +1,6 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 const path = require("path");
 module.exports = {
-   purge: {
-    enabled: true,
-    content: [`${path.join(process.cwd(),"index.html")}`],
-  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
