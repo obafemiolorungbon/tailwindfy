@@ -1,5 +1,4 @@
 const shell = require('shelljs');
-const { askQuestions, InitialBuild } = require("./lib/askDetails");
 const setUpConfig = require("./lib/setUpConfig")
 
 const argv = process.argv[2]
