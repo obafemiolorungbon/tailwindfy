@@ -1,6 +1,6 @@
 {
   "name": "tailwindpurge",
-  "version": "1.2.14",
+  "version": "1.2.15",
   "description": "a minimal cli tool to help purge tailwind css without the tailwin set up",
   "main": "index",
   "bin": {
