@@ -11,4 +11,4 @@ if (argv =="large"|| argv == "l"){
 const filename = process.argv[3];
 setUpConfig(filename);
 shell.exec(" cd ./node_modules/tailwindpurge && yarn run compile && yarn run miniBuild")
-module.exports = { purgeFile };
+
