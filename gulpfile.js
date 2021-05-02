@@ -27,7 +27,7 @@ const createConfig =()=>{
         let toWrite = `
     purge:{
       enabled : ${enabled}, 
-      content : ["../${filename}"]},`; 
+      content : ["../../${filename}"]},`; 
         return src("./tailwind.config.js")
           .pipe(inject.after("module.exports = {",toWrite))
           .pipe(dest(`./`));
