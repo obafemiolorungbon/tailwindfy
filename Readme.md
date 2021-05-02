@@ -46,12 +46,13 @@ npx tailwindfy small index.html
 Some couple of things to note:
     1. The file should be in the root of the project directory. But if not, then the file relative url from the root directory should be used, for example, this will work quite well
 
-    ```shell
+```shell
     npx tailwindfy small src/index.html
-    ```
-    for a file in the src folder, with the src folder located in the root folder.
+```
 
-This command will output a purged CSS file into the styles/output folder in the root directory. The filename will be ```javascript tailwindminicss.css``.(bear with us on that naming).
+for a file in the src folder, with the src folder located in the root folder.
+
+This command will output a purged CSS file into the styles/output folder in the root directory. The filename will be  ```javascript tailwindminicss.css`` .(bear with us on that naming).
 
 Tailwindfy is meant for developers who just want to spin up a project quickly without having to worry about setting up tailwind config and still want to use the full tailwind capacity, because let's face it, the CDN version is rarely enough for your use case and comes with a lot of unnneccesary css. You will need all the optimization your webpage can get.
 
