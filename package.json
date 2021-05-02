@@ -1,6 +1,6 @@
 {
   "name": "tailwindpurge",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "a minimal cli tool to help purge tailwind css without the tailwin set up",
   "main": "index",
   "bin": {
@@ -13,7 +13,7 @@
     "compile": "gulp compile",
     "commit": "git add . && git commit -m 'fix: fix errors' && git push -u origin master",
     "lauch": "yarn run setup && yarn run compile && yarn run build",
-    "publish":"npm version patch && npm publish"
+    "publish": "npm version patch && npm publish"
   },
   "keywords": [
     "purge",
