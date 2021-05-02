@@ -9,5 +9,5 @@ if (argv =="large"|| argv == "l"){
 }
 const filename = process.argv[3];
 setUpConfig(filename);
-shell.exec(" cd ./node_modules/tailwindpurge && yarn run compile && yarn run miniBuild")
+shell.exec(" cd ./node_modules/tailwindfy && yarn run compile && yarn run miniBuild")
 
