@@ -26,6 +26,8 @@
   "contributors": [
     "Obafemi Joseph <obafedance@gmail.com>"
   ],
+  "repository": "https://github.com/obafemiolorungbon/tailwindfy",
+  "issues":"https://github.com/obafemiolorungbon/tailwindfy/issues",
   "license": "MIT",
   "dependencies": {
     "autoprefixer": "^10.2.5",
