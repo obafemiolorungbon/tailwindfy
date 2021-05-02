@@ -12,7 +12,8 @@
     "miniBuild": "postcss styles/config/tailwindbase.css -c ./tailwind.config.cjs -o ../styles/output/tailwindminicss.css",
     "compile": "gulp compile",
     "commit": "git add . && git commit -m 'fix: fix errors' && git push -u origin master",
-    "lauch": "yarn run setup && yarn run compile && yarn run build"
+    "lauch": "yarn run setup && yarn run compile && yarn run build",
+    "publish":"npm version patch && npm publish"
   },
   "keywords": [
     "purge",
